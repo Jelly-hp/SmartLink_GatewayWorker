@@ -32,9 +32,10 @@ $gateway->startPort = 11100;
 $gateway->registerAddress = '127.0.0.1:11000';
 
 // 心跳间隔
-$gateway->pingInterval = 30;
+$gateway->pingInterval = 10;
 // 心跳数据
-$gateway->pingData = "Server Data:".date('Y-m-d H:i:s',time());
+$gateway->pingData = "";
+//$gateway->pingData = "Server Data:".date('Y-m-d H:i:s',time())."\r";
 // 客户端在30秒内有1次未回复就断开连接
 $gateway->pingNotResponseLimit = 1;
 
