@@ -131,23 +131,26 @@ class Events
 			break;
 		}
 		// 数据总长不足（数据未接收完成 或 接收异常）
-		if (strlen($message) - $intput_pos < $intput_len + 5)
+		if (strlen($message) - $intput_pos < $intput_len + 4)
 		{
 			Gateway::sendToCurrentClient("message too short\r");
 			break;
 		}
 			
 		// 有效数据
-		$dat = substr($message, $intput_pos, $intput_len + 5);
+		$dat = substr($message, $intput_pos, $intput_len + 4);
 
 //		Gateway::sendToCurrentClient("receive:\r");
 //		Gateway::sendToCurrentClient("{\r\tlen:".$intput_len."\r");
 //		Gateway::sendToCurrentClient("\thex:".bin2hex($dat)."\r}\r");
 		
-		$crc = ord(substr($dat, $intput_len + 3, 1)) * 256 + ord(substr($dat, $intput_len + 4, 1));
-		Gateway::sendToCurrentClient("crc:".bin2hex(substr($dat, $intput_len + 3, 2))."\r");
-//		$check = crc16(substr($dat,0,strlen($dat) - 1));
-//		if ($crc == crc16($dat))
+		$crc = ord(substr($dat, $intput_len + 2, 1)) * 256 + ord(substr($dat, $intput_len + 3, 1));
+		Gateway::sendToCurrentClient("crc:".dechex($crc)."\r");
+
+		$strCalc = substr($dat,0,strlen($dat) - 2);
+		$check = self::crc16($strCalc);
+		Gateway::sendToCurrentClient("calc:".dechex($check)."\r");
+		if ($crc == $check)
 		{
 			Gateway::sendToCurrentClient("success\r");
 			return;

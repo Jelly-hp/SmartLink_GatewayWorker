@@ -26,7 +26,7 @@ $worker->count = 3;
 // 服务注册地址
 $worker->registerAddress = '127.0.0.1:11000';
 // 设置监控服务端业务超时时间（单位秒）。不设置默认是30秒，设置为0表示不监控。
-$worker->processTimeout = 5;
+$worker->processTimeout = 30;
 
 // 如果不是在根目录启动，则运行runAll方法
 if(!defined('GLOBAL_START')) {

@@ -13872,3 +13872,386 @@ Stack trace:
 #13 {main}
 2018-01-14 15:21:47 pid:17898 Worker process terminated
 2018-01-14 15:21:47 pid:17896 worker[LogInBusinessWorker_test:17898] exit with status 64000
+2018-01-15 16:13:37 pid:23 Workerman[start.php] start in DAEMON mode
+2018-01-15 16:15:24 pid:32 Workerman[start.php] start in DEBUG mode
+2018-01-15 16:15:24 pid:32 Workerman[start.php] already running
+2018-01-15 16:15:27 pid:33 Workerman[start.php] restart 
+2018-01-15 16:15:27 pid:33 Workerman[start.php] is stoping ...
+2018-01-15 16:15:27 pid:25 Workerman[start.php] stopping ...
+2018-01-15 16:15:27 pid:25 Workerman[start.php] has been stopped
+2018-01-15 16:15:27 pid:33 Workerman[start.php] stop success
+2018-01-15 16:16:43 pid:33 Workerman[start.php] reloading
+2018-01-15 16:16:44 pid:33 Workerman[start.php] reloading
+2018-01-15 16:16:48 pid:45 Error: Call to undefined function crc16() in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#1 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #44, 2, Resource id #44)
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#13 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#14 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2018-01-15 16:16:48 pid:45 Worker process terminated
+2018-01-15 16:16:48 pid:33 worker[LogInBusinessWorker_test:45] exit with status 64000
+2018-01-15 16:17:05 pid:33 Workerman[start.php] reloading
+2018-01-15 16:17:08 pid:33 Workerman[start.php] reloading
+2018-01-15 16:17:12 pid:52 Error: Call to undefined function crc16() in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#1 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #47, 2, Resource id #47)
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#13 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#14 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2018-01-15 16:17:12 pid:52 Worker process terminated
+2018-01-15 16:17:12 pid:33 worker[LogInBusinessWorker_test:52] exit with status 64000
+2018-01-15 16:17:24 pid:33 Workerman[start.php] stopping ...
+2018-01-15 16:17:24 pid:33 Workerman[start.php] has been stopped
+2018-01-15 16:17:24 pid:54 Workerman[start.php] restart 
+2018-01-15 16:17:24 pid:54 Workerman[start.php] is stoping ...
+2018-01-15 16:17:24 pid:54 Workerman[start.php] stop success
+2018-01-15 16:17:27 pid:56 Error: Call to undefined function crc16() in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#1 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #41, 2, Resource id #41)
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2018-01-15 16:17:27 pid:56 Worker process terminated
+2018-01-15 16:17:27 pid:54 worker[LogInBusinessWorker_test:56] exit with status 64000
+2018-01-15 16:17:29 pid:54 Workerman[start.php] stopping ...
+2018-01-15 16:17:29 pid:54 Workerman[start.php] has been stopped
+2018-01-15 16:21:50 pid:62 Workerman[start.php] restart 
+2018-01-15 16:21:50 pid:62 Workerman[start.php] is stoping ...
+2018-01-15 16:21:50 pid:62 Workerman[start.php] stop success
+2018-01-15 16:21:58 pid:66 Error: Call to undefined function crc16() in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:150
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#1 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #41, 2, Resource id #41)
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2018-01-15 16:21:58 pid:66 Worker process terminated
+2018-01-15 16:21:58 pid:62 worker[LogInBusinessWorker_test:66] exit with status 64000
+2018-01-15 16:22:35 pid:62 Workerman[start.php] stopping ...
+2018-01-15 16:22:35 pid:62 Workerman[start.php] has been stopped
+2018-01-15 16:22:36 pid:70 Workerman[start.php] restart 
+2018-01-15 16:22:36 pid:70 Workerman[start.php] is stoping ...
+2018-01-15 16:22:36 pid:70 Workerman[start.php] stop success
+2018-01-15 16:22:50 pid:70 Workerman[start.php] reloading
+2018-01-15 16:23:00 pid:70 Workerman[start.php] reloading
+2018-01-15 16:23:01 pid:70 Workerman[start.php] reloading
+2018-01-15 16:23:03 pid:70 Workerman[start.php] reloading
+2018-01-15 16:23:06 pid:70 Workerman[start.php] reloading
+2018-01-15 16:23:09 pid:70 Workerman[start.php] reloading
+2018-01-15 16:26:24 pid:70 Workerman[start.php] reloading
+2018-01-15 16:26:30 pid:70 Workerman[start.php] reloading
+2018-01-15 16:26:47 pid:70 Workerman[start.php] reloading
+2018-01-15 16:26:48 pid:70 Workerman[start.php] reloading
+2018-01-15 16:26:56 pid:70 Workerman[start.php] reloading
+2018-01-15 16:27:00 pid:70 Workerman[start.php] stopping ...
+2018-01-15 16:27:00 pid:70 Workerman[start.php] has been stopped
+2018-01-15 16:27:05 pid:110 Workerman[start.php] restart 
+2018-01-15 16:27:05 pid:110 Workerman[start.php] is stoping ...
+2018-01-15 16:27:05 pid:110 Workerman[start.php] stop success
+2018-01-15 16:28:08 pid:110 Workerman[start.php] reloading
+2018-01-15 16:29:54 pid:110 Workerman[start.php] stopping ...
+2018-01-15 16:29:54 pid:110 Workerman[start.php] has been stopped
+2018-01-15 16:33:16 pid:120 Workerman[start.php] restart 
+2018-01-15 16:33:16 pid:120 Workerman[start.php] is stoping ...
+2018-01-15 16:33:16 pid:120 Workerman[start.php] stop success
+2018-01-15 16:33:16 pid:122 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2018-01-15 16:33:16 pid:123 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2018-01-15 16:33:16 pid:124 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2018-01-15 16:33:17 pid:122 Worker process terminated
+2018-01-15 16:33:17 pid:123 Worker process terminated
+2018-01-15 16:33:17 pid:120 worker[LogInBusinessWorker_test:122] exit with status 64000
+2018-01-15 16:33:17 pid:120 worker[LogInBusinessWorker_test:123] exit with status 64000
+2018-01-15 16:33:17 pid:124 Worker process terminated
+2018-01-15 16:33:17 pid:127 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2018-01-15 16:33:17 pid:120 worker[LogInBusinessWorker_test:124] exit with status 64000
+2018-01-15 16:33:17 pid:128 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2018-01-15 16:33:17 pid:129 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2018-01-15 16:33:18 pid:120 Workerman[start.php] stopping ...
+2018-01-15 16:33:18 pid:127 Worker process terminated
+2018-01-15 16:33:18 pid:128 Worker process terminated
+2018-01-15 16:33:18 pid:129 Worker process terminated
+2018-01-15 16:33:18 pid:120 worker[LogInBusinessWorker_test:127] exit with status 64000
+2018-01-15 16:33:18 pid:120 worker[LogInBusinessWorker_test:128] exit with status 64000
+2018-01-15 16:33:18 pid:120 worker[LogInBusinessWorker_test:129] exit with status 64000
+2018-01-15 16:33:18 pid:120 Workerman[start.php] has been stopped
+2018-01-15 16:35:21 pid:130 Workerman[start.php] restart 
+2018-01-15 16:35:21 pid:130 Workerman[start.php] is stoping ...
+2018-01-15 16:35:21 pid:130 Workerman[start.php] stop success
+2018-01-15 16:35:21 pid:132 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2018-01-15 16:35:21 pid:133 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2018-01-15 16:35:21 pid:134 ParseError: syntax error, unexpected ')' in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:149
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2018-01-15 16:35:21 pid:130 Workerman[start.php] stopping ...
+2018-01-15 16:35:21 pid:132 Worker process terminated
+2018-01-15 16:35:21 pid:133 Worker process terminated
+2018-01-15 16:35:21 pid:134 Worker process terminated
+2018-01-15 16:35:22 pid:130 worker[LogInBusinessWorker_test:133] exit with status 64000
+2018-01-15 16:35:22 pid:130 worker[LogInBusinessWorker_test:134] exit with status 64000
+2018-01-15 16:35:22 pid:130 worker[LogInBusinessWorker_test:132] exit with status 64000
+2018-01-15 16:35:22 pid:130 Workerman[start.php] has been stopped
+2018-01-15 16:35:41 pid:137 Workerman[start.php] restart 
+2018-01-15 16:35:41 pid:137 Workerman[start.php] is stoping ...
+2018-01-15 16:35:41 pid:137 Workerman[start.php] stop success
+2018-01-15 17:00:39 pid:137 Workerman[start.php] reloading
+2018-01-15 17:00:46 pid:137 Workerman[start.php] reloading
+2018-01-15 17:04:44 pid:137 Workerman[start.php] reloading
+2018-01-15 17:04:48 pid:137 Workerman[start.php] reloading
+2018-01-15 17:04:54 pid:154 Error: Call to undefined function dec2hex() in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:150
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#1 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f0000012b5c000...', 'UW\x00\x03\x01\x00\xAE')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #45, 2, Resource id #45)
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#13 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#14 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2018-01-15 17:04:54 pid:154 Worker process terminated
+2018-01-15 17:04:54 pid:137 worker[LogInBusinessWorker_test:154] exit with status 64000
+2018-01-15 17:05:04 pid:137 Workerman[start.php] stopping ...
+2018-01-15 17:05:04 pid:137 Workerman[start.php] has been stopped
+2018-01-15 17:06:20 pid:157 Workerman[start.php] restart 
+2018-01-15 17:06:20 pid:157 Workerman[start.php] is stoping ...
+2018-01-15 17:06:20 pid:157 Workerman[start.php] stop success
+2018-01-15 17:06:52 pid:157 Workerman[start.php] reloading
+2018-01-15 17:11:43 pid:157 Workerman[start.php] reloading
+2018-01-15 17:13:47 pid:157 Workerman[start.php] reloading
+2018-01-15 17:13:51 pid:157 Workerman[start.php] reloading
+2018-01-15 17:13:51 pid:173 ParseError: syntax error, unexpected '$check' (T_VARIABLE) in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:151
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2018-01-15 17:13:51 pid:174 ParseError: syntax error, unexpected '$check' (T_VARIABLE) in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:151
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2018-01-15 17:13:51 pid:175 ParseError: syntax error, unexpected '$check' (T_VARIABLE) in /mnt/e/Starain/Github/GatewayWorkerDemo/Applications/LogIn/Events.php:151
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 [internal function]: spl_autoload_call('Events')
+#2 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(210): is_callable('Events::onWorke...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(2081): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#6 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1294): GatewayWorker\BusinessWorker->run()
+#7 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /mnt/e/Starain/Github/GatewayWorkerDemo/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /mnt/e/Starain/Github/GatewayWorkerDemo/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2018-01-15 17:13:52 pid:157 Workerman[start.php] reloading
+2018-01-15 17:13:52 pid:173 Worker process terminated
+2018-01-15 17:13:52 pid:157 worker[LogInBusinessWorker_test:173] exit with status 64000
+2018-01-15 17:13:52 pid:174 Worker process terminated
+2018-01-15 17:13:52 pid:157 worker[LogInBusinessWorker_test:174] exit with status 64000
+2018-01-15 17:13:52 pid:175 Worker process terminated
+2018-01-15 17:13:52 pid:157 worker[LogInBusinessWorker_test:175] exit with status 64000
+2018-01-15 17:13:55 pid:157 Workerman[start.php] reloading
+2018-01-15 17:14:01 pid:163 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-01-15 17:14:01 pid:163 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-01-15 17:14:01 pid:163 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-01-15 17:14:09 pid:157 Workerman[start.php] stopping ...
+2018-01-15 17:14:09 pid:157 Workerman[start.php] has been stopped
+2018-01-15 17:14:10 pid:182 Workerman[start.php] restart 
+2018-01-15 17:14:10 pid:182 Workerman[start.php] is stoping ...
+2018-01-15 17:14:10 pid:182 Workerman[start.php] stop success
+2018-01-15 17:21:23 pid:182 Workerman[start.php] reloading
