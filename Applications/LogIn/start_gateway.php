@@ -18,7 +18,7 @@ use \GatewayWorker\BusinessWorker;
 use \Workerman\Autoloader;
 
 // gateway 进程，这里使用Text协议，可以用telnet测试
-$gateway = new Gateway("tcp://0.0.0.0:12000");
+$gateway = new Gateway("smartHome://0.0.0.0:12000");
 // gateway名称，status方便查看
 $gateway->name = 'LogInGateway_test';
 // gateway进程数
