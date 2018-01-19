@@ -21451,3 +21451,71 @@ Stack trace:
 2018-01-19 21:08:46 pid:1429 Workerman[start.php] reloading
 2018-01-19 21:08:49 pid:1429 Workerman[start.php] reloading
 2018-01-19 21:09:04 pid:1429 Workerman[start.php] reloading
+2018-01-19 21:14:32 pid:24 Workerman[start.php] restart 
+2018-01-19 21:14:32 pid:24 Workerman[start.php] is stoping ...
+2018-01-19 21:14:32 pid:24 Workerman[start.php] stop success
+2018-01-19 21:15:22 pid:24 Workerman[start.php] reloading
+2018-01-19 21:15:25 pid:24 Workerman[start.php] reloading
+2018-01-19 21:15:30 pid:24 Workerman[start.php] stopping ...
+2018-01-19 21:15:30 pid:24 Workerman[start.php] has been stopped
+2018-01-19 21:15:31 pid:37 Workerman[start.php] restart 
+2018-01-19 21:15:31 pid:37 Workerman[start.php] is stoping ...
+2018-01-19 21:15:31 pid:37 Workerman[start.php] stop success
+2018-01-19 21:16:28 pid:37 Workerman[start.php] reloading
+2018-01-19 21:16:29 pid:37 Workerman[start.php] stopping ...
+2018-01-19 21:16:29 pid:37 Workerman[start.php] has been stopped
+2018-01-19 21:16:31 pid:47 Workerman[start.php] restart 
+2018-01-19 21:16:31 pid:47 Workerman[start.php] is stoping ...
+2018-01-19 21:16:31 pid:47 Workerman[start.php] stop success
+2018-01-19 21:17:33 pid:47 Workerman[start.php] reloading
+2018-01-19 21:17:35 pid:47 Workerman[start.php] stopping ...
+2018-01-19 21:17:35 pid:47 Workerman[start.php] has been stopped
+2018-01-19 21:17:36 pid:57 Workerman[start.php] restart 
+2018-01-19 21:17:36 pid:57 Workerman[start.php] is stoping ...
+2018-01-19 21:17:36 pid:57 Workerman[start.php] stop success
+2018-01-19 21:17:59 pid:57 Workerman[start.php] reloading
+2018-01-19 21:18:02 pid:57 Workerman[start.php] stopping ...
+2018-01-19 21:18:02 pid:57 Workerman[start.php] has been stopped
+2018-01-19 21:18:03 pid:67 Workerman[start.php] restart 
+2018-01-19 21:18:03 pid:67 Workerman[start.php] is stoping ...
+2018-01-19 21:18:03 pid:67 Workerman[start.php] stop success
+2018-01-19 21:18:47 pid:67 Workerman[start.php] reloading
+2018-01-19 21:19:12 pid:67 Workerman[start.php] reloading
+2018-01-19 21:20:22 pid:67 Workerman[start.php] reloading
+2018-01-19 21:20:41 pid:67 Workerman[start.php] reloading
+2018-01-19 21:20:46 pid:67 Workerman[start.php] reloading
+2018-01-19 21:20:49 pid:67 Workerman[start.php] reloading
+2018-01-19 21:20:50 pid:67 Workerman[start.php] stopping ...
+2018-01-19 21:20:50 pid:67 Workerman[start.php] has been stopped
+2018-01-19 21:20:51 pid:92 Workerman[start.php] restart 
+2018-01-19 21:20:51 pid:92 Workerman[start.php] is stoping ...
+2018-01-19 21:20:51 pid:92 Workerman[start.php] stop success
+2018-01-19 21:23:38 pid:92 Workerman[start.php] reloading
+2018-01-19 21:23:39 pid:92 Workerman[start.php] stopping ...
+2018-01-19 21:23:39 pid:92 Workerman[start.php] has been stopped
+2018-01-19 21:23:40 pid:102 Workerman[start.php] restart 
+2018-01-19 21:23:40 pid:102 Workerman[start.php] is stoping ...
+2018-01-19 21:23:40 pid:102 Workerman[start.php] stop success
+2018-01-19 21:23:55 pid:102 Workerman[start.php] reloading
+2018-01-19 21:24:09 pid:102 Workerman[start.php] reloading
+2018-01-19 21:24:10 pid:102 Workerman[start.php] reloading
+2018-01-19 21:24:10 pid:102 Workerman[start.php] stopping ...
+2018-01-19 21:24:10 pid:102 Workerman[start.php] has been stopped
+2018-01-19 21:24:11 pid:118 Workerman[start.php] restart 
+2018-01-19 21:24:11 pid:118 Workerman[start.php] is stoping ...
+2018-01-19 21:24:11 pid:118 Workerman[start.php] stop success
+2018-01-19 21:24:46 pid:118 Workerman[start.php] reloading
+2018-01-19 21:24:46 pid:118 Workerman[start.php] stopping ...
+2018-01-19 21:24:46 pid:123 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2018-01-19 21:24:46 pid:118 Workerman[start.php] has been stopped
+2018-01-19 21:24:47 pid:125 Workerman[start.php] restart 
+2018-01-19 21:24:47 pid:125 Workerman[start.php] is stoping ...
+2018-01-19 21:24:47 pid:125 Workerman[start.php] stop success
+2018-01-19 21:24:59 pid:125 Workerman[start.php] reloading
+2018-01-19 21:25:03 pid:125 Workerman[start.php] reloading
+2018-01-19 21:25:11 pid:125 Workerman[start.php] reloading
+2018-01-19 21:25:12 pid:125 Workerman[start.php] stopping ...
+2018-01-19 21:25:12 pid:125 Workerman[start.php] has been stopped
+2018-01-19 21:25:12 pid:141 Workerman[start.php] restart 
+2018-01-19 21:25:12 pid:141 Workerman[start.php] is stoping ...
+2018-01-19 21:25:12 pid:141 Workerman[start.php] stop success

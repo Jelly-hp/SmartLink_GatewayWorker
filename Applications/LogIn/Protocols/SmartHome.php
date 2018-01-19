@@ -71,6 +71,8 @@ class smartHome
 	 */
 	public static function input($buffer)
 	{
+		echo "start:".microtime()."\r\n";
+
 		// 获取总长
 		$num = strlen($buffer);
 
@@ -143,7 +145,8 @@ class smartHome
 		if (stripos($buffer, "\x55\xAA") === 0) {
 			return substr($buffer, 4, strlen($buffer) - 7); //cmd + dat
 		}
-		else
-			return null;
+		else {
+			return;
+		}
 	}
 }

@@ -72,29 +72,25 @@ class Events
     	if ($message === null)  //异常数据，跳过
 	        return;
 
-		Gateway::sendToCurrentClient("message:".bin2hex($message)."\r");
+		echo ("message:".bin2hex($message)."\r\n");
 
-//	    if (stripos($message, "\x55\xAA") === 0) {
-			$rec = unpack("C*", $message);
-			switch ($rec[0])    //cmd
-			{
-				case 0x00:  //登录
+		$rec = unpack("C1cmd/C*dat", $message);
+		switch ($rec['cmd'])    //cmd
+		{
+			case 0x00:  //登录
 
-					break;
+				break;
 
-				case 0x01:  //
-					break;
+			case 0x01:  //
+				break;
 
-				default:
-					break;
-			}
+			default:
+				break;
+		}
 
-		    Gateway::sendToCurrentClient("data receive ok!!\r");
-//		}
-//		else {
-//			Gateway::sendToCurrentClient("data receive err!!\r");
-//		}
+	    echo "end:".microtime()."\r\n";
 
+	    Gateway::sendToCurrentClient("data receive ok!!\r");
     }
    
    /**
