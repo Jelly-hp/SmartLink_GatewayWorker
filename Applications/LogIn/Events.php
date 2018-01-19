@@ -28,6 +28,7 @@ use \GatewayWorker\Lib\Gateway;
  */
 class Events
 {
+
 //	public static $db = null;
 //
 //	/**
@@ -52,18 +53,48 @@ class Events
 //        Gateway::sendToAll("$client_id login\n");
     }
 
+/*	// 数据结构
+	public static $empty = array(
+		'head'          => 0x55AA,  //2B
+		'len'           => 0,       //2B
+		'cmd'           => 0,       //1B
+		'dat'           => 0,       //nB
+		'crc'           => 0x0000,  //2B
+		'end'           => 0xFF,    //1B
+	);
+*/
 	/**
 	 * 当客户端发来消息时触发
 	 * @param int $client_id 连接id
 	 * @param mixed $message 具体消息
 	 */
     public static function onMessage($client_id, $message) {
-    	if ($message != " ")
-	    {
-		    Gateway::sendToCurrentClient("OK\n");
-	    }
-	    else
-		    Gateway::sendToCurrentClient("data error\n");
+    	if ($message === null)  //异常数据，跳过
+	        return;
+
+		Gateway::sendToCurrentClient("message:".bin2hex($message)."\r");
+
+//	    if (stripos($message, "\x55\xAA") === 0) {
+			$rec = unpack("C*", $message);
+			switch ($rec[0])    //cmd
+			{
+				case 0x00:  //登录
+
+					break;
+
+				case 0x01:  //
+					break;
+
+				default:
+					break;
+			}
+
+		    Gateway::sendToCurrentClient("data receive ok!!\r");
+//		}
+//		else {
+//			Gateway::sendToCurrentClient("data receive err!!\r");
+//		}
+
     }
    
    /**
