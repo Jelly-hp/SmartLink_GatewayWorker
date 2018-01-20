@@ -59,7 +59,6 @@ class smartHome
 		'cmd'           => 0,       //1B
 		'dat'           => 0,       //nB
 		'crc'           => 0x0000,  //2B
-		'end'           => 0xFF,    //1B
 	);
 */
 	/**
@@ -71,8 +70,6 @@ class smartHome
 	 */
 	public static function input($buffer)
 	{
-		echo "start:".microtime()."\r\n";
-
 		// 获取总长
 		$num = strlen($buffer);
 
@@ -84,7 +81,7 @@ class smartHome
 				return $num - 1;
 			}
 			else {
-				return 0;
+				return $num;
 			}
 //			return $num - 1 < 0? 0: $num - 1;   //最后一个字符有可能是帧头，保留一个字节
 		}
@@ -96,30 +93,26 @@ class smartHome
 		unset($pos);
 
 		// 是否达到最小指令长度
-		if ($num < 8)//
+		if ($num < 7)//
 			return 0;
 
 		// 协议数据长度
 		$len = unpack("n1",substr($buffer, 2, 2))[1];
 		// 指令长度异常
-		if ($len < 4)
+		if ($len < 1)//至少有一个指令字节
 			return 1;   //抛弃异常帧
 
 		// 数据总长不足（数据未接收完成 或 接收异常）
-		if ($num < $len + 4)
+		if ($num < $len + 6)
 			return 0;
 
-		// 校验帧尾
-		if (substr($buffer, $len + 3, 1) != "\xFF")
-			return 1;   //抛弃异常帧
-
 		// CRC校验
-		$getCrc = unpack("n1", substr($buffer, $len + 1, 2))[1];
-		$crcDat = substr($buffer, 0, $len + 1);
-		$calcCrc = self::crc16($crcDat, $len + 1);
+		$getCrc = unpack("n1", substr($buffer, $len + 4, 2))[1];
+		$crcDat = substr($buffer, 2, $len + 2);
+		$calcCrc = self::crc16($crcDat, $len + 2);
 
 		if ($getCrc == $calcCrc)
-			return $len + 4;
+			return $len + 6;
 		else
 			return 1;
 	}
@@ -142,8 +135,10 @@ class smartHome
 	 */
 	public static function decode($buffer)
 	{
+//		echo "接收到字符：".bin2hex($buffer)."\r\n";
+
 		if (stripos($buffer, "\x55\xAA") === 0) {
-			return substr($buffer, 4, strlen($buffer) - 7); //cmd + dat
+			return substr($buffer, 4, strlen($buffer) - 6); //cmd + dat
 		}
 		else {
 			return;

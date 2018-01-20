@@ -20,7 +20,7 @@
 //declare(ticks=1);
 
 use \GatewayWorker\Lib\Gateway;
-
+//require_once '/your/path/of/mysql-master/src/Connection.php';
 /**
  * 主逻辑
  * 主要是处理 onConnect onMessage onClose 三个方法
@@ -71,17 +71,24 @@ class Events
     public static function onMessage($client_id, $message) {
     	if ($message === null)  //异常数据，跳过
 	        return;
+	    echo "start:".microtime()."\r\n";
 
-		echo ("message:".bin2hex($message)."\r\n");
-
-		$rec = unpack("C1cmd/C*dat", $message);
-		switch ($rec['cmd'])    //cmd
+	    $rec = ord(substr($message,0,1));
+		switch ($rec)    //cmd
 		{
 			case 0x00:  //登录
 
 				break;
 
 			case 0x01:  //
+				break;
+
+			case 0xF0:  //主机模式
+
+				break;
+
+			case 0xFF:  //扩展模式
+
 				break;
 
 			default:
